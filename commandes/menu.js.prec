@@ -18,8 +18,8 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
     cm.map(async (com, index) => { if (!coms[com.categorie])
         coms[com.categorie] = []; coms[com.categorie].push(com.nomCom); });
     const temps = moment(moment()).format("HH:MM:SS");
-    moment.tz.setDefault('asia/karachi ').locale("id");
-    const date = moment.tz("asia/karachi").format("DD/MM/YYYY");
+    moment.tz.setDefault('Africa/Nairobi').locale("id");
+    const date = moment.tz("Africa/Nairobi").format("DD/MM/YYYY");
     console.log("date" + date);
     console.log("temps " + temps);
     let menuMsg = "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
@@ -38,26 +38,26 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
    ╔════ ▓▓ ࿇ ▓▓ ════╗
    
    ||
-   ||     Préfixe : ${s.prefixe}
+   ||     Prefix : ${s.prefixe}
    ||      Owner : ${s.NOM_OWNER}
-   ||      Commandes : ${cm.length}
+   ||      Commands: ${cm.length}
    ||      Date : ${date}
-   ||      Heure : ${temps}
-   ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Développeurs : Djalega++||Luffy
+   ||      Time : ${temps}
+   ||      Memory: ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
+   ||  Developers : ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄||ᮓ𝜩꣡𝐑𝐃
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
 ╔════---------
-║    Préfixe : ${s.PREFIXE}
+║    Prefix: ${s.PREFIXE}
 ║    Owner : ${s.NOM_OWNER}    
 ║    Mode : ${mode}
-║    Commandes:${cm.length}
+║    Commands:${cm.length}
 ║    Date : ${date}
-║    Heure : ${temps}
-║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║    Time : ${temps}
+║    Memory : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+║    Platform: ${os.platform()}
+║    Developers : ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄||ᮓ𝜩꣡𝐑𝐃
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
