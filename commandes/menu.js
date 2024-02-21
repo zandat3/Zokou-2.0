@@ -32,15 +32,15 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 *╔═════ •✧✧• ════╗*
-┃   *Prefix* : ${s.PREFIXE}
-┃   *Owner* : ${s.NOM_OWNER}
-┃   *Mode* : ${mode}
-┃   *Commands* : ${cm.length}
-┃   *Date* : ${date}
-┃   *Time* : ${temps}
-┃   *Memory* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃   *Platform* : ${os.platform()}
-┃   *Developer* : ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ 
+┃ ➫  *Prefix* : ${s.PREFIXE}
+┃ ➫  *Owner* : ${s.NOM_OWNER}
+┃ ➫ *Mode* : ${mode}
+┃ ➫  *Commands* : ${cm.length}
+┃ ➫  *Date* : ${date}
+┃ ➫  *Time* : ${temps}
+┃ ➫  *Memory* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃ ➫  *Platform* : ${os.platform()}
+┃ ➫  *Developer* : ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ 
 ┃  & Mᮓ𝜩꣡𝐑𝐃
 *╚═════ •✧✧• ════╝* \n\n`;
     
