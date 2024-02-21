@@ -24,7 +24,7 @@ zokou({ nomCom: "menu", reaction:"📁",categorie: "Général" }, async (dest, z
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('Etc/GMT');
+    moment.tz.setDefault('Africa/Nairobi');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
@@ -32,23 +32,23 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 *╔═════ •✧✧• ════╗*
-┃   *Préfixe* : ${s.PREFIXE}
+┃   *Prefix* : ${s.PREFIXE}
 ┃   *Owner* : ${s.NOM_OWNER}
 ┃   *Mode* : ${mode}
-┃   *Commandes* : ${cm.length}
+┃   *Commands* : ${cm.length}
 ┃   *Date* : ${date}
-┃   *Heure* : ${temps}
-┃   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃   *Plateforme* : ${os.platform()}
-┃   *Développeurs* : Djalega++ 
-┃  & M๏𝓷keℽ D Lบffy
+┃   *Time* : ${temps}
+┃   *Memory* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃   *Platform* : ${os.platform()}
+┃   *Developer* : ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ 
+┃  & Mᮓ𝜩꣡𝐑𝐃
 *╚═════ •✧✧• ════╝* \n\n`;
     
 let menuMsg = `
-👋 salut ${nomAuteurMessage} 👋
-Je suis *${s.BOT}*, un bot développé par *La team Zokou*.
+👋 hi ${nomAuteurMessage} 👋
+I am *${s.BOT}*, a bot developed by *The ᮓ𝜩꣡𝐑𝐃𝐒 team*.
 
-*Voici la liste de mes commandes :*
+*Here is the list of my orders:*
 ◇                             ◇
 `;
 
@@ -65,9 +65,9 @@ Je suis *${s.BOT}*, un bot développé par *La team Zokou*.
     menuMsg += `
 ◇            ◇
 *»»————— ★ —————««*
-Pour utiliser une  commande, tapez  ${prefixe}"nom de la commande"
- 
- *『ZokouMD*
+To use a command, type ${prefix}"command name"
+
+ *『✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ ᮓ𝜩꣡𝐑𝐃*
                                                 
 *»»————— ★ —————««*
 `;
